@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Mi página
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <h1>Mis animales</h1>
+            {% for animal in animal_mostrar%}
+                <article>
+                    <h3>{{animal.nombre}}</h3>
+                    <h5>El cuidador es:{{ animal.cuidador}}</h5>
+                    <h5>Su tipo es:{{ animal.tipo}}</h5>
+                </article>
+            {% endfor %}
+
+            <a href="/protectoras" class="btn btn-primary">Protectoras</a>
+        </body>
+    </html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Mi página
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1>COLABORADORES:</h1>
+            {% for colaborador in colaborador_mostrar%}
+                <article>
+                    <h3>{{colaborador.nombre}}</h3>
+                    <h6>Descripción:{{ colaborador.cargo}}</h6>
+                    <h6>Su fecha de creación es:{{ colaborador.fecha_entrada_protectora}}</h6>
+                </article>
+            {% endfor %}
+
+            <a href="/" class="btn btn-primary">Inicio</a>
+            
+        </body>
+</html>
